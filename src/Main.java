@@ -271,12 +271,8 @@ public class Main {
 
 
 
-
             OUTER_1:// Label of the game
             while (running) {// the whole game running
-
-
-
 
 
                 System.out.println("-----------------------------------------------");
@@ -307,7 +303,7 @@ public class Main {
                 }
 
 
-                
+
                 switch (enemyRole) {  // enemy role bonuses switch
 
                     case "DPS":         // dps bonus
