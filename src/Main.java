@@ -13,7 +13,7 @@ public class Main {
             Random rand = new Random();
             //Game variables
             //enemy variables
-            String[] enemies = {"Skeleton", "Miner", "Warlock", "Mage", "Zombie", "Demon", "Treasure_Hunter", "Adventurer", "Orc"}; // enemy names types clases
+            String[] enemies = {"Skeleton", "Miner", "Warlock", "Mage", "Zombie", "Demon", "TreasureHunter", "Adventurer", "Orc"}; // enemy names types clases
             String[] enemyRoles = {"Tank", "DPS", "Healer"};//tank mele and heal  , dps raanged and mele and spells , healer heal and mele
             //  String[] enemyRangedWeapons = {"Short_bow", "Long_bow", "Sling", "Crossbow", "Throwing_dagger", "Throwing_axe", "Throwing_spear"};
             // String[] enemyMeleWeapons = {"Axe", "Dagger", "Short_dagger", "Long_dagger", "Short_sword", "Long_sword", "Lance", "Trydent", "Spear", "Mace"};
@@ -112,7 +112,7 @@ public class Main {
             // based on race and starting class
             //  String[] heroClass = {"Warrior", "Knight", "Shaman", "Cultist", "Warlock", "Witcher", "Archer", "Mage"};
             //  String[] heroRace = {"Nord", "Imperial", "Argonian", "Elf", "Dark Elf", "Blood Elf", "Ork", "Human", "Demon"};
-            //  String[] heroArmor = {"No armor", "Mail armor", "Heavy plate armor", "Plate armor", "Lether armor", "Hide armor", "Chainmail", "Bone armor", "Items.Clothes.Clothes", "Mage clothes", "Rags"};
+            //  String[] heroArmor = {"No armor", "Mail armor", "Heavy plate armor", "Plate armor", "Lether armor", "Hide armor", "Chainmail", "Bone armor", "Models.Items.Clothes.Clothes", "Mage clothes", "Rags"};
             //  String[] rangedWeaponsHero = {"Short bow", "Long bow", "Sling", "Crossbow", "Throwing dagger", "Throwing axe", "Throwing spear"};
             //  String[] meleWeaponsHero = {"Axe", "Dagger", "Short dagger", "Long dagger", "Short sword", "Long sword", "Lance", "Trydent", "Spear", "Mace"};
             //  String[] heroRoles = {"Tank", "DPS", "Healer"};
@@ -405,7 +405,7 @@ public class Main {
                     System.out.println("\tYour HP:" + health);
                     System.out.println("\tYour Mana:" + mana);
                     System.out.println("\tYour Stamina:" + stamina);
-                    System.out.println("\tYour Items.Armour.Armour rating:" + defence);
+                    System.out.println("\tYour Models.Items.Armour.Armour rating:" + defence);
                     System.out.println("\tYour Damage rating is :" + attackDamage);
                     System.out.println("\tYour CritChance rating is :" + heroCritChance);
                     System.out.println("\tYour Abillity Power rating is :" + abilityPower);
@@ -419,7 +419,7 @@ public class Main {
                     System.out.println("\t" + enemy + " 's HP:" + enemyHealth);
                     System.out.println("\t" + enemy + " 's Mana:" + enemyMana);
                     System.out.println("\t" + enemy + " 's Stamina:" + enemyStamina);
-                    System.out.println("\t" + enemy + " 's Items.Armour.Armour:" + enemyDef);
+                    System.out.println("\t" + enemy + " 's Models.Items.Armour.Armour:" + enemyDef);
 
                     if (enemyBossStatus == 1 &&  enemyMobStatus == 0){
                         System.out.println("\t" + enemy + " is a Boss beware !!! ");
