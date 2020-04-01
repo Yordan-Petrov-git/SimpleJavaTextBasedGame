@@ -1,4 +1,4 @@
-package Database;
+package Database.Connector;
 
 public class Connection {
 }
