@@ -1,4 +1,4 @@
-package Models.Entitys.Enemies;
+package Models.Entitys.Enemies.SuperClassEnemy;
 
 import Models.Entitys.SuperClassEntity.Entity;
 

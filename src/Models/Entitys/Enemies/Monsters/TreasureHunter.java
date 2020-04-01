@@ -1,4 +1,6 @@
 package Models.Entitys.Enemies.Monsters;
 
-public class TreasureHunter {
+import Models.Entitys.Enemies.SuperClassEnemy.Enemy;
+
+public class TreasureHunter extends Enemy {
 }

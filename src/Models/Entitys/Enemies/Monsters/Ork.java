@@ -1,4 +1,6 @@
 package Models.Entitys.Enemies.Monsters;
 
-public class Ork {
+import Models.Entitys.Enemies.SuperClassEnemy.Enemy;
+
+public class Ork extends Enemy {
 }

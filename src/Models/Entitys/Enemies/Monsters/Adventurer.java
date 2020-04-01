@@ -1,4 +1,6 @@
 package Models.Entitys.Enemies.Monsters;
 
-public class Adventurer {
+import Models.Entitys.Enemies.SuperClassEnemy.Enemy;
+
+public class Adventurer extends Enemy {
 }

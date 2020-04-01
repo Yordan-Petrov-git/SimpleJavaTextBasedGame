@@ -1,4 +1,6 @@
 package Models.Entitys.Enemies.Monsters;
 
-public class Goblin {
+import Models.Entitys.Enemies.SuperClassEnemy.Enemy;
+
+public class Goblin extends Enemy {
 }

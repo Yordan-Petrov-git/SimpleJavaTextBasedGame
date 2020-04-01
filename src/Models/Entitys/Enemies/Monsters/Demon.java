@@ -1,4 +1,6 @@
 package Models.Entitys.Enemies.Monsters;
 
-public class Demon {
+import Models.Entitys.Enemies.SuperClassEnemy.Enemy;
+
+public class Demon extends Enemy {
 }

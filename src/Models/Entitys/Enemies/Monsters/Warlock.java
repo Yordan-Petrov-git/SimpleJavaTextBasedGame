@@ -1,4 +1,6 @@
 package Models.Entitys.Enemies.Monsters;
 
-public class Warlock {
+import Models.Entitys.Enemies.SuperClassEnemy.Enemy;
+
+public class Warlock extends Enemy {
 }
