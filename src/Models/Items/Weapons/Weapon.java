@@ -2,7 +2,7 @@ package Models.Items.Weapons;
 
 public class Weapon {
 
-    private String idWepon;
+    private String iDWeapon;
 
     private double damage;
     private double weight;
@@ -21,11 +21,11 @@ public class Weapon {
     private double fireDamage;
     private double darkDamage;
 
-    public Weapon(String idWepon, double damage, double weight, double bleedDamage, double slashDamage, double punctureDamage
+    public Weapon(String iDWeapon, double damage, double weight, double bleedDamage, double slashDamage, double punctureDamage
             , double magickDamage, double lifeStealDamage, double frostDamage, double shockDamage, double fireDamage
             , double darkDamage) {
 
-        setIdWepon(idWepon);
+        setIdWepon(iDWeapon);
         setDamage(damage);
         setWeight(weight);
         setBleedDamage(bleedDamage);
@@ -43,11 +43,11 @@ public class Weapon {
 
 
     public String getIdWepon() {
-        return this.idWepon;
+        return this.iDWeapon;
     }
 
     public void setIdWepon(String idWepon) {
-        this.idWepon = idWepon;
+        this.iDWeapon = idWepon;
     }
 
     public double getDamage() {

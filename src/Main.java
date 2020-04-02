@@ -1,3 +1,7 @@
+import Models.Items.Weapons.RangedWeapons.RangedWeapons;
+import Models.Items.Weapons.RangedWeapons.ShortBow;
+import Models.Items.Weapons.Weapon;
+
 import java.util.Random;
 import java.util.Scanner;
 
