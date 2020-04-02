@@ -6,7 +6,9 @@ import Models.Entitys.Heroes.Hero;
 
 public class Controller {
 
-  public Hero currentHero;
-  public Adventurer adventurer;
-       
+  public static Hero currentHero;
+  public static Adventurer adventurer;
+
+
+
 }

@@ -41,6 +41,9 @@ public class Entity {
 
     private double fireResist;
     private double frostResist;
+
+
+
     private double shockResist;
 
     private double souls;
@@ -343,5 +346,44 @@ public class Entity {
 
     public void setEntityBoss(boolean entityBoss) {
         isEntityBoss = entityBoss;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Entity{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", entityClass=").append(entityClass);
+        sb.append(", entityRace=").append(entityRace);
+        sb.append(", entityLevel=").append(entityLevel);
+        sb.append(", health=").append(health);
+        sb.append(", mana=").append(mana);
+        sb.append(", stamina=").append(stamina);
+        sb.append(", movementSpeed=").append(movementSpeed);
+        sb.append(", attackDamage=").append(attackDamage);
+        sb.append(", abilityPower=").append(abilityPower);
+        sb.append(", attackSpeed=").append(attackSpeed);
+        sb.append(", castingSpeed=").append(castingSpeed);
+        sb.append(", lifeSteal=").append(lifeSteal);
+        sb.append(", criticalChance=").append(criticalChance);
+        sb.append(", lifeStealChance=").append(lifeStealChance);
+        sb.append(", defence=").append(defence);
+        sb.append(", block=").append(block);
+        sb.append(", parryChance=").append(parryChance);
+        sb.append(", hitChance=").append(hitChance);
+        sb.append(", missChance=").append(missChance);
+        sb.append(", bleedResist=").append(bleedResist);
+        sb.append(", slashResist=").append(slashResist);
+        sb.append(", punctureResist=").append(punctureResist);
+        sb.append(", magickResist=").append(magickResist);
+        sb.append(", holyResist=").append(holyResist);
+        sb.append(", darkResist=").append(darkResist);
+        sb.append(", fireResist=").append(fireResist);
+        sb.append(", frostResist=").append(frostResist);
+        sb.append(", shockResist=").append(shockResist);
+        sb.append(", souls=").append(souls);
+        sb.append(", hunger=").append(hunger);
+        sb.append(", isEntityBoss=").append(isEntityBoss);
+        sb.append('}');
+        return sb.toString();
     }
 }

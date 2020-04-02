@@ -4,11 +4,16 @@ import Controller.Controller;
 import Models.Entitys.Enemies.Monsters.Adventurer;
 import Models.Entitys.Heroes.Hero;
 
-import java.util.stream.Collectors;
+import java.util.Random;
+import java.util.Scanner;
 
 public class InitializeEntity extends Controller {
 
-    public void initializeEnemyMonsterAdventurer(String nameEnemy, int classEnemy, int raceEnemy) {
+    public static Random random = new Random();
+
+    public static Scanner in = new Scanner(System.in);
+
+    public static void initializeEnemyMonsterAdventurer(String nameEnemy, int classEnemy, int raceEnemy) {
 
         Adventurer adventurer = new Adventurer(nameEnemy, classEnemy, raceEnemy, 0, 100, 100, 100, 1,
                 10, 0, 1, 1, 1, 1, 1, 5,
@@ -16,17 +21,135 @@ public class InitializeEntity extends Controller {
                 1, 1, 1, 1, 1, 0, false
                 , 1, 1, 0);
 
-
+        Controller.adventurer = adventurer;
 
     }
 
-    public static void initializeHero(String nameHero, int classHero, int raceHero) {
+    public static void initializeHero() {
 
-        Hero hero = new Hero(nameHero, classHero, raceHero, 0, 100, 100, 100, 1,
+
+        String HeroName = "Unnamed";
+        int HeroClass = 0;
+        int HeroRace = 0;
+        int HeroLevel = 0 ;
+        double HeroHealth= 100.0 ;
+        double HeroMana= 0.0 ;
+        double HeroStamina= 100.0 ;
+        double HeroMovementSpeed= 0.0 ;
+        double HeroAttackDamage= 0.0 ;
+        double HeroAbilityPower= 0.0 ;
+        double HeroAttackSpeed= 0.0 ;
+        double HeroCastingSpeed= 0.0 ;
+        double HeroLifeSteal= 0.0 ;
+        double HeroCriticalChance= 0.0 ;
+        double HeroLifeStealChance= 0.0 ;
+        double HeroDefence= 0.0 ;
+        double HeroBlock= 0.0 ;
+        double HeroParryChance= 0.0 ;
+        double HeroHitChance= 0.0 ;
+        double HeroMissChance= 0.0 ;
+        double HeroBleedResist= 0.0 ;
+        double HeroSlashResist= 0.0 ;
+        double HeroPunctureResist= 0.0 ;
+        double HeroMagickResist= 0.0 ;
+        double HeroHolyResist= 0.0 ;
+        double HeroDarkResist= 0.0 ;
+        double HeroFireResist= 0.0 ;
+        double HeroFrostResist= 0.0 ;
+        double HeroShockResist= 0.0 ;
+        double HeroSouls = 1.0;
+        double HeroHunger = 0.0 ;
+        boolean isEntityBoss = false;
+
+
+        System.out.println("        Welcome to the Dungeon Hero! ");
+        System.out.println("\n\t>Enter your hero's name :   ");// hero naming and greating
+
+        ;
+
+        if (in.hasNextLine()) HeroName = in.nextLine();         // hero naming and greating
+        System.out.println("\t> Hello " + HeroName + " Welcome to the adventure! ");// hero naming and greating
+        // hero naming and greating
+
+
+        System.out.println("Chose role for your hero");
+        System.out.println(">1.DPS ");
+        System.out.println(">2.Tank ");
+        System.out.println(">3.Healer ");
+        String clasin = in.nextLine();
+
+        while (!clasin.equals("1") && !clasin.equals("2") && !clasin.equals("3")) {
+            System.out.println(" Invalid command ! ");
+            clasin = in.nextLine();
+        }
+
+
+        switch (clasin) {
+
+            case "1":
+
+                clasin = "DPS";
+                String heroDPSclass = "DPS";
+
+                boolean heroDPS = true;
+
+                System.out.println("\t>You have chosen " + heroDPSclass + " role for your hero! ");
+                health += 100;
+                level += 1;
+                defence += 25;
+                mana += 25;
+                stamina += 100 + rand.nextInt(60);
+                attackDamage += 30 + level + rand.nextInt(5);
+                abilityPower += 15 + level / 2;
+                heroGoldInInventory += 500;
+                heroCritChance += 3;
+                break;
+
+            case "2":
+                clasin = "Tank";
+                String heroTankclass = "Tank";
+                int heroTank = 1;
+                System.out.println("\t>You have chosen " + heroTankclass + " role for your hero! ");
+                health += 300 + rand.nextInt(60);
+                level += 1;
+                defence += 85;
+                mana += 10;
+                stamina += 10;
+                attackDamage += 2 + level;
+                abilityPower += 10 + level / 2;
+                heroGoldInInventory += 200;
+                heroCritChance += 1;
+                break;
+
+            case "3":        // hero lealer class
+                clasin = "Healer";
+                String heroHealerclass = "Healer";
+                int heroHealer = 1;
+                System.out.println("\t>You have chosen" + heroHealerclass + " role for your hero! ");
+                health += 150;
+                level += 1;
+                defence += 10;
+                mana += 100 + level + rand.nextInt(60);
+                stamina += 20;
+                attackDamage += 1 + level / 2;
+                abilityPower += 60 + level / 2;
+                heroGoldInInventory += 1;
+                heroCritChance += 2;
+                healFactorHealerClass = 10 + rand.nextInt(50) * level;
+                break;
+
+
+            default:
+                System.out.println("\t> Invalid command please chose 1 , 2 , 3 , 4 , 5 or 6 ");
+                break;
+        }
+
+        Hero hero = new Hero(HeroName, HeroClass, HeroRace, HeroLevel, HeroHealth, HeroMana, HeroStamina, HeroMovementSpeed,
                 10, 0, 1, 1, 1, 1, 1, 5,
                 1, 1, 1, 1, 1, 1, 1, 1, 1,
                 1, 1, 1, 1, 1, 0, false);
 
+        Controller.currentHero = hero;
 
     }
 
