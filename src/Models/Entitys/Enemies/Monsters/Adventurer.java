@@ -1,10 +1,12 @@
 package Models.Entitys.Enemies.Monsters;
 
 import Models.Entitys.Enemies.SuperClassEnemy.Enemy;
+import Models.Entitys.SuperClassEntity.Enum.EnumEntityClass;
+import Models.Entitys.SuperClassEntity.Enum.EnumEntityRace;
 
 public class Adventurer extends Enemy {
 
-    public Adventurer(String name, int entityClass, int entityRace, int entityLevel, double health, double mana
+    public Adventurer(String name, EnumEntityClass entityClass, EnumEntityRace entityRace, int entityLevel, double health, double mana
             , double stamina, double movementSpeed, double attackDamage, double abilityPower, double attackSpeed
             , double castingSpeed, double lifeSteal, double criticalChance, double lifeStealChance, double defence
             , double block, double parryChance, double hitChance, double missChance, double bleedResist, double slashResist

@@ -1,6 +1,8 @@
 package Models.Entitys.Enemies.SuperClassEnemy;
 
 import Models.Entitys.SuperClassEntity.Entity;
+import Models.Entitys.SuperClassEntity.Enum.EnumEntityClass;
+import Models.Entitys.SuperClassEntity.Enum.EnumEntityRace;
 
 public class Enemy extends Entity {
 
@@ -9,7 +11,7 @@ public class Enemy extends Entity {
     private double dropAmountGold;
     private double dropAmountItems;
 
-    public Enemy(String name, int entityClass, int entityRace, int entityLevel, double health, double mana, double stamina
+    public Enemy(String name, EnumEntityClass entityClass, EnumEntityRace entityRace, int entityLevel, double health, double mana, double stamina
             , double movementSpeed, double attackDamage, double abilityPower, double attackSpeed, double castingSpeed, double lifeSteal
             , double criticalChance, double lifeStealChance, double defence, double block, double parryChance, double hitChance
             , double missChance, double bleedResist, double slashResist, double punctureResist, double magickResist, double holyResist

@@ -1,11 +1,14 @@
 package Models.Entitys.SuperClassEntity;
 
+import Models.Entitys.SuperClassEntity.Enum.EnumEntityClass;
+import Models.Entitys.SuperClassEntity.Enum.EnumEntityRace;
+
 public class Entity {
 
     private String name;
 
-    private int entityClass;
-    private int entityRace;
+    private EnumEntityClass entityClass;
+    private EnumEntityRace entityRace;
     private int entityLevel;
 
     private double health;
@@ -43,7 +46,6 @@ public class Entity {
     private double frostResist;
 
 
-
     private double shockResist;
 
     private double souls;
@@ -52,7 +54,7 @@ public class Entity {
 
     private boolean isEntityBoss;
 
-    public Entity(String name, int entityClass, int entityRace, int entityLevel, double health, double mana, double stamina
+    public Entity(String name, EnumEntityClass entityClass, EnumEntityRace entityRace, int entityLevel, double health, double mana, double stamina
             , double movementSpeed, double attackDamage, double abilityPower, double attackSpeed, double castingSpeed, double lifeSteal
             , double criticalChance, double lifeStealChance, double defence, double block, double parryChance, double hitChance
             , double missChance, double bleedResist, double slashResist, double punctureResist, double magickResist, double holyResist
@@ -100,19 +102,19 @@ public class Entity {
         this.name = name;
     }
 
-    public int getEntityClass() {
+    public EnumEntityClass getEntityClass() {
         return this.entityClass;
     }
 
-    public void setEntityClass(int entityClass) {
+    public void setEntityClass(EnumEntityClass entityClass) {
         this.entityClass = entityClass;
     }
 
-    public int getEntityRace() {
+    public EnumEntityRace getEntityRace() {
         return this.entityRace;
     }
 
-    public void setEntityRace(int entityRace) {
+    public void setEntityRace(EnumEntityRace entityRace) {
         this.entityRace = entityRace;
     }
 
