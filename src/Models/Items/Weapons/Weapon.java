@@ -4,22 +4,42 @@ public class Weapon {
 
     private String idWepon;
 
-    private Double damage;
-    private Double weight;
+    private double damage;
+    private double weight;
 
-    private Double bleedDamage;
+    private double bleedDamage;
 
-    private Double slashDamage;
-    private Double punctureDamage;
+    private double slashDamage;
+    private double punctureDamage;
 
-    private Double magickDamage;
+    private double magickDamage;
 
-    private Double lifeStealDamage;
+    private double lifeStealDamage;
 
-    private Double frostDamage;
-    private Double shockDamage;
-    private Double fireDamage;
-    private Double darkDamage;
+    private double frostDamage;
+    private double shockDamage;
+    private double fireDamage;
+    private double darkDamage;
+
+    public Weapon(String idWepon, double damage, double weight, double bleedDamage, double slashDamage, double punctureDamage
+            , double magickDamage, double lifeStealDamage, double frostDamage, double shockDamage, double fireDamage
+            , double darkDamage) {
+
+        setIdWepon(idWepon);
+        setDamage(damage);
+        setWeight(weight);
+        setBleedDamage(bleedDamage);
+        setSlashDamage(slashDamage);
+        setPunctureDamage(punctureDamage);
+        setMagickDamage(magickDamage);
+        setLifeStealDamage(lifeStealDamage);
+        setFrostDamage(frostDamage);
+        setShockDamage(shockDamage);
+        setFrostDamage(fireDamage);
+        setDamage(darkDamage);
+    }
+
+
 
 
     public String getIdWepon() {
@@ -30,67 +50,67 @@ public class Weapon {
         this.idWepon = idWepon;
     }
 
-    public Double getDamage() {
+    public double getDamage() {
         return this.damage;
     }
 
-    public void setDamage(Double damage) {
+    public void setDamage(double damage) {
         this.damage = damage;
     }
 
-    public Double getWeight() {
+    public double getWeight() {
         return this.weight;
     }
 
-    public void setWeight(Double weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
-    public Double getBleedDamage() {
+    public double getBleedDamage() {
         return this.bleedDamage;
     }
 
-    public void setBleedDamage(Double bleedDamage) {
+    public void setBleedDamage(double bleedDamage) {
         this.bleedDamage = bleedDamage;
     }
 
-    public Double getSlashDamage() {
+    public double getSlashDamage() {
         return this.slashDamage;
     }
 
-    public void setSlashDamage(Double slashDamage) {
+    public void setSlashDamage(double slashDamage) {
         this.slashDamage = slashDamage;
     }
 
-    public Double getPunctureDamage() {
+    public double getPunctureDamage() {
         return this.punctureDamage;
     }
 
-    public void setPunctureDamage(Double punctureDamage) {
+    public void setPunctureDamage(double punctureDamage) {
         this.punctureDamage = punctureDamage;
     }
 
-    public Double getMagickDamage() {
+    public double getMagickDamage() {
         return this.magickDamage;
     }
 
-    public void setMagickDamage(Double magickDamage) {
+    public void setMagickDamage(double magickDamage) {
         this.magickDamage = magickDamage;
     }
 
-    public Double getLifeStealDamage() {
+    public double getLifeStealDamage() {
         return this.lifeStealDamage;
     }
 
-    public void setLifeStealDamage(Double lifeStealDamage) {
+    public void setLifeStealDamage(double lifeStealDamage) {
         this.lifeStealDamage = lifeStealDamage;
     }
 
-    public Double getFrostDamage() {
+    public double getFrostDamage() {
         return this.frostDamage;
     }
 
-    public void setFrostDamage(Double frostDamage) {
+    public void setFrostDamage(double frostDamage) {
         this.frostDamage = frostDamage;
     }
 
@@ -98,7 +118,7 @@ public class Weapon {
         return this.shockDamage;
     }
 
-    public void setShockDamage(Double shockDamage) {
+    public void setShockDamage(double shockDamage) {
         this.shockDamage = shockDamage;
     }
 
@@ -106,7 +126,7 @@ public class Weapon {
         return this.fireDamage;
     }
 
-    public void setFireDamage(Double fireDamage) {
+    public void setFireDamage(double fireDamage) {
         this.fireDamage = fireDamage;
     }
 
@@ -114,7 +134,7 @@ public class Weapon {
         return this.darkDamage;
     }
 
-    public void setDarkDamage(Double darkDamage) {
+    public void setDarkDamage(double darkDamage) {
         this.darkDamage = darkDamage;
     }
 
