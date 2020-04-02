@@ -1,3 +1,4 @@
+import Models.Entitys.Helpers.InitializeEntity.InitializeEntity;
 import Models.Items.Weapons.RangedWeapons.RangedWeapons;
 import Models.Items.Weapons.RangedWeapons.ShortBow;
 import Models.Items.Weapons.Weapon;
@@ -10,6 +11,9 @@ public class Main {
 
 
         public static void main(String[] args) {
+
+            InitializeEntity.initializeHero("Myname",1,1);
+
 
             //system objects
             Scanner in = new Scanner(System.in);
