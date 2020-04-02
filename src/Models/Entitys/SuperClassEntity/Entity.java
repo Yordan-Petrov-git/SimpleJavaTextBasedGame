@@ -19,10 +19,10 @@ public class Entity {
     private double attackSpeed;
 
     private double castingSpeed;
-    private double lifesteal;
+    private double lifeSteal;
 
     private double criticalChance;
-    private double lifestealChance;
+    private double lifeStealChance;
 
     private double defence;
     private double block;
@@ -35,7 +35,7 @@ public class Entity {
     private double slashResist;
     private double punctureResist;
 
-    private double magicktResist;
+    private double magickResist;
     private double holyResist;
     private double darkResist;
 
@@ -48,6 +48,46 @@ public class Entity {
     private double hunger;
 
     private boolean isEntityBoss;
+
+    public Entity(String name, int entityClass, int entityRace, int entityLevel, double health, double mana, double stamina
+            , double movementSpeed, double attackDamage, double abilityPower, double attackSpeed, double castingSpeed, double lifeSteal
+            , double criticalChance, double lifeStealChance, double defence, double block, double parryChance, double hitChance
+            , double missChance, double bleedResist, double slashResist, double punctureResist, double magickResist, double holyResist
+            , double darkResist, double fireResist, double frostResist, double shockResist, double souls, double hunger, boolean isEntityBoss) {
+
+        setName(name);
+        setEntityClass(entityClass);
+        setEntityRace(entityRace);
+        setEntityLevel(entityLevel);
+        setHealth(health);
+        setMana(mana);
+        setStamina(stamina);
+        setMovementSpeed(movementSpeed);
+        setAttackDamage(attackDamage);
+        setAbilityPower(abilityPower);
+        setAttackSpeed(attackSpeed);
+        setCastingSpeed(castingSpeed);
+        setLifeSteal(lifeSteal);
+        setCriticalChance(criticalChance);
+        setLifeStealChance(lifeStealChance);
+        setDefence(defence);
+        setBlock(block);
+        setParryChance(parryChance);
+        setHitChance(hitChance);
+        setMissChance(missChance);
+        setBleedResist(bleedResist);
+        setSlashResist(slashResist);
+        setPunctureResist(punctureResist);
+        setMagickResist(magickResist);
+        setHolyResist(holyResist);
+        setDarkResist(darkResist);
+        setFireResist(fireResist);
+        setFireResist(frostResist);
+        setShockResist(shockResist);
+        setSouls(souls);
+        setHunger(hunger);
+        setEntityBoss(isEntityBoss);
+    }
 
     public String getName() {
         return this.name;
@@ -145,12 +185,12 @@ public class Entity {
         this.castingSpeed = castingSpeed;
     }
 
-    public double getLifesteal() {
-        return this.lifesteal;
+    public double getLifeSteal() {
+        return this.lifeSteal;
     }
 
-    public void setLifesteal(double lifesteal) {
-        this.lifesteal = lifesteal;
+    public void setLifeSteal(double lifeSteal) {
+        this.lifeSteal = lifeSteal;
     }
 
     public double getCriticalChance() {
@@ -161,12 +201,12 @@ public class Entity {
         this.criticalChance = criticalChance;
     }
 
-    public double getLifestealChance() {
-        return this.lifestealChance;
+    public double getLifeStealChance() {
+        return this.lifeStealChance;
     }
 
-    public void setLifestealChance(double lifestealChance) {
-        this.lifestealChance = lifestealChance;
+    public void setLifeStealChance(double lifeStealChance) {
+        this.lifeStealChance = lifeStealChance;
     }
 
     public double getDefence() {
@@ -233,12 +273,12 @@ public class Entity {
         this.punctureResist = punctureResist;
     }
 
-    public double getMagicktResist() {
-        return this.magicktResist;
+    public double getMagickResist() {
+        return this.magickResist;
     }
 
-    public void setMagicktResist(double magicktResist) {
-        this.magicktResist = magicktResist;
+    public void setMagickResist(double magickResist) {
+        this.magickResist = magickResist;
     }
 
     public double getHolyResist() {
