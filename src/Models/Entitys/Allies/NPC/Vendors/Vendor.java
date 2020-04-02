@@ -1,4 +1,4 @@
-package Models.Entitys.Allies.Vendors;
+package Models.Entitys.Allies.NPC.Vendors;
 
 import Models.Entitys.Allies.Allay;
 
