@@ -6,6 +6,7 @@ public class Entity {
 
     private int entityClass;
     private int entityRace;
+    private int entityLevel;
 
     private double health;
     private double mana;
@@ -16,6 +17,7 @@ public class Entity {
     private double attackDamage;
     private double abilityPower;
     private double attackSpeed;
+
     private double castingSpeed;
     private double lifesteal;
 
@@ -47,4 +49,259 @@ public class Entity {
 
     private boolean isEntityBoss;
 
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getEntityClass() {
+        return this.entityClass;
+    }
+
+    public void setEntityClass(int entityClass) {
+        this.entityClass = entityClass;
+    }
+
+    public int getEntityRace() {
+        return this.entityRace;
+    }
+
+    public void setEntityRace(int entityRace) {
+        this.entityRace = entityRace;
+    }
+
+    public int getEntityLevel() {
+        return this.entityLevel;
+    }
+
+    public void setEntityLevel(int entityLevel) {
+        this.entityLevel = entityLevel;
+    }
+
+    public double getHealth() {
+        return this.health;
+    }
+
+    public void setHealth(double health) {
+        this.health = health;
+    }
+
+    public double getMana() {
+        return this.mana;
+    }
+
+    public void setMana(double mana) {
+        this.mana = mana;
+    }
+
+    public double getStamina() {
+        return this.stamina;
+    }
+
+    public void setStamina(double stamina) {
+        this.stamina = stamina;
+    }
+
+    public double getMovementSpeed() {
+        return this.movementSpeed;
+    }
+
+    public void setMovementSpeed(double movementSpeed) {
+        this.movementSpeed = movementSpeed;
+    }
+
+    public double getAttackDamage() {
+        return this.attackDamage;
+    }
+
+    public void setAttackDamage(double attackDamage) {
+        this.attackDamage = attackDamage;
+    }
+
+    public double getAbilityPower() {
+        return this.abilityPower;
+    }
+
+    public void setAbilityPower(double abilityPower) {
+        this.abilityPower = abilityPower;
+    }
+
+    public double getAttackSpeed() {
+        return this.attackSpeed;
+    }
+
+    public void setAttackSpeed(double attackSpeed) {
+        this.attackSpeed = attackSpeed;
+    }
+
+    public double getCastingSpeed() {
+        return this.castingSpeed;
+    }
+
+    public void setCastingSpeed(double castingSpeed) {
+        this.castingSpeed = castingSpeed;
+    }
+
+    public double getLifesteal() {
+        return this.lifesteal;
+    }
+
+    public void setLifesteal(double lifesteal) {
+        this.lifesteal = lifesteal;
+    }
+
+    public double getCriticalChance() {
+        return this.criticalChance;
+    }
+
+    public void setCriticalChance(double criticalChance) {
+        this.criticalChance = criticalChance;
+    }
+
+    public double getLifestealChance() {
+        return this.lifestealChance;
+    }
+
+    public void setLifestealChance(double lifestealChance) {
+        this.lifestealChance = lifestealChance;
+    }
+
+    public double getDefence() {
+        return this.defence;
+    }
+
+    public void setDefence(double defence) {
+        this.defence = defence;
+    }
+
+    public double getBlock() {
+        return this.block;
+    }
+
+    public void setBlock(double block) {
+        this.block = block;
+    }
+
+    public double getParryChance() {
+        return this.parryChance;
+    }
+
+    public void setParryChance(double parryChance) {
+        this.parryChance = parryChance;
+    }
+
+    public double getHitChance() {
+        return this.hitChance;
+    }
+
+    public void setHitChance(double hitChance) {
+        this.hitChance = hitChance;
+    }
+
+    public double getMissChance() {
+        return this.missChance;
+    }
+
+    public void setMissChance(double missChance) {
+        this.missChance = missChance;
+    }
+
+    public double getBleedResist() {
+        return this.bleedResist;
+    }
+
+    public void setBleedResist(double bleedResist) {
+        this.bleedResist = bleedResist;
+    }
+
+    public double getSlashResist() {
+        return this.slashResist;
+    }
+
+    public void setSlashResist(double slashResist) {
+        this.slashResist = slashResist;
+    }
+
+    public double getPunctureResist() {
+        return this.punctureResist;
+    }
+
+    public void setPunctureResist(double punctureResist) {
+        this.punctureResist = punctureResist;
+    }
+
+    public double getMagicktResist() {
+        return this.magicktResist;
+    }
+
+    public void setMagicktResist(double magicktResist) {
+        this.magicktResist = magicktResist;
+    }
+
+    public double getHolyResist() {
+        return this.holyResist;
+    }
+
+    public void setHolyResist(double holyResist) {
+        this.holyResist = holyResist;
+    }
+
+    public double getDarkResist() {
+        return this.darkResist;
+    }
+
+    public void setDarkResist(double darkResist) {
+        this.darkResist = darkResist;
+    }
+
+    public double getFireResist() {
+        return this.fireResist;
+    }
+
+    public void setFireResist(double fireResist) {
+        this.fireResist = fireResist;
+    }
+
+    public double getFrostResist() {
+        return this.frostResist;
+    }
+
+    public void setFrostResist(double frostResist) {
+        this.frostResist = frostResist;
+    }
+
+    public double getShockResist() {
+        return this.shockResist;
+    }
+
+    public void setShockResist(double shockResist) {
+        this.shockResist = shockResist;
+    }
+
+    public double getSouls() {
+        return this.souls;
+    }
+
+    public void setSouls(double souls) {
+        this.souls = souls;
+    }
+
+    public double getHunger() {
+        return this.hunger;
+    }
+
+    public void setHunger(double hunger) {
+        this.hunger = hunger;
+    }
+
+    public boolean isEntityBoss() {
+        return this.isEntityBoss;
+    }
+
+    public void setEntityBoss(boolean entityBoss) {
+        isEntityBoss = entityBoss;
+    }
 }
