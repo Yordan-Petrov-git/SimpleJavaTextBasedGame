@@ -3,9 +3,16 @@ package Models.Entitys.SuperClassEntity;
 import Models.Entitys.SuperClassEntity.Enum.EnumEntityClass;
 import Models.Entitys.SuperClassEntity.Enum.EnumEntityRace;
 
+/**
+ *
+ */
+
 public class Entity {
 
+
+
     private String name;
+    private String IDnumber;
 
     private EnumEntityClass entityClass;
     private EnumEntityRace entityRace;

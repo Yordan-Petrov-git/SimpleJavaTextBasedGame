@@ -3,14 +3,47 @@ package Models.Entitys.Heroes;
 import Models.Entitys.SuperClassEntity.Entity;
 import Models.Entitys.SuperClassEntity.Enum.EnumEntityClass;
 import Models.Entitys.SuperClassEntity.Enum.EnumEntityRace;
-import Models.Items.Weapons.Weapon;
-
-import java.util.ArrayList;
 
 public class Hero extends Entity {
 
 
     //TODO SOME KIND OF INVENTORY AND ON HERO ITEMS
+
+    /**
+     *
+     * @param name
+     * @param entityClass
+     * @param entityRace
+     * @param entityLevel
+     * @param health
+     * @param mana
+     * @param stamina
+     * @param movementSpeed
+     * @param attackDamage
+     * @param abilityPower
+     * @param attackSpeed
+     * @param castingSpeed
+     * @param lifeSteal
+     * @param criticalChance
+     * @param lifeStealChance
+     * @param defence
+     * @param block
+     * @param parryChance
+     * @param hitChance
+     * @param missChance
+     * @param bleedResist
+     * @param slashResist
+     * @param punctureResist
+     * @param magickResist
+     * @param holyResist
+     * @param darkResist
+     * @param fireResist
+     * @param frostResist
+     * @param shockResist
+     * @param souls
+     * @param hunger
+     * @param isEntityBoss
+     */
 
     public Hero(String name, EnumEntityClass entityClass, EnumEntityRace entityRace, int entityLevel, double health, double mana
             , double stamina, double movementSpeed, double attackDamage, double abilityPower, double attackSpeed

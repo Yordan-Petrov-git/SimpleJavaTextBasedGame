@@ -133,15 +133,15 @@ public class InitializeEntity extends Controller {
                 boolean heroDPS = true;
 
                 System.out.println("\t>You have chosen " + heroDPSclass + " role for your hero! ");
-//                health += 100;
-//                level += 1;
-//                defence += 25;
-//                mana += 25;
-//                stamina += 100 + rand.nextInt(60);
-//                attackDamage += 30 + level + rand.nextInt(5);
-//                abilityPower += 15 + level / 2;
+                HeroHealth += 100.00;
+                HeroLevel += 1;
+                HeroDefence += 25.00;
+                HeroMana += 25;
+                HeroStamina += 100 ;
+                HeroAttackDamage += 30 ;
+                HeroAbilityPower += 15 ;
 //                heroGoldInInventory += 500;
-//                heroCritChance += 3;
+                HeroCriticalChance += 3;
                 break;
 
             case "2":
