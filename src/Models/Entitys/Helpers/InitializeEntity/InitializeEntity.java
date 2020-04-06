@@ -60,7 +60,7 @@ public class InitializeEntity extends Controller {
                 darkResistAdventurer, fireResistAdventurer, frostResistAdventurer, shockResistAdventurer, soulsAdventurer, hungerAdventurer, isAdventurerBoss
                 , dropAmountExperienceAdventurer, dropAmountGoldAdventurer, dropAmountItemsAdventurer);
 
-        Controller.adventurer = adventurer;
+
 
     }
 
