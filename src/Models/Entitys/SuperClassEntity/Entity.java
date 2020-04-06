@@ -13,6 +13,7 @@ public class Entity {
 
     private String name;
     private String IDnumber;
+    private double gold;
 
     private EnumEntityClass entityClass;
     private EnumEntityRace entityRace;
